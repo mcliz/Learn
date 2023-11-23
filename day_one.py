@@ -32,14 +32,35 @@ print(Teammate[1])
 print(f"The members of our team are {Teammate[0].title()} {Teammate[1].title()} {Teammate[2].title()} and {Teammate[3].title()}")
 T=print(f"The members of our team are {Teammate[0].title()} {Teammate[1].title()} {Teammate[2].title()} and {Teammate[3].title()}")
 
-Guider=[]
-Guider.append('Han Yiliang')
-Guider.append('Li Yv')
-G=print(f"Our guider are {Guider[0].title()} and {Guider[1].title()}")
+Guiders=[]
+Guiders.append('Han Yiliang')
+Guiders.append('Li Yv')
+G=print(f"Our guider are {Guiders[0].title()} and {Guiders[1].title()}")
 
 print(f"{T} {G}")
 
-Guider_new=Guider.pop()
+Guider_new=Guiders.pop()
 #pop弹出元素并继续使用
-print(Guider)
+print(Guiders)
 print(Guider_new)
+
+
+#record time：2023.11.23
+
+Guiders.append('Song Chaoyue')
+
+for Guider in Guiders:
+    print(Guider)
+#元素形式
+
+Guider_girl='Song Chaoyue'
+Guiders.remove(Guider_girl)
+Guiders.append('Li Yv')
+print(Guiders)
+#列表形式
+print(f"\nBecause {Guider_girl} is a girl")
+
+#test git
+#test git 2
+#test git 3
+#test git 3
